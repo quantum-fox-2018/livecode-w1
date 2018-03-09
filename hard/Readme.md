@@ -1,4 +1,4 @@
-# Data Visualization - Bar Chart
+touch# Data Visualization - Bar Chart
 
 > ⏰ Time Estimation: ~60 mins
 
