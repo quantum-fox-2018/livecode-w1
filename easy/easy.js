@@ -8,11 +8,12 @@ function moneyExchanger(money, needCoin){
             
 
             if(coin[i][0] == needCoin){
-                money = money - needCoin
+                coin[i][0] = needCoin
+                money = money - coin[i][0]
                 coin[i][1]--
                 result.push(coin[i][0])
             }
-            else if(needCoin == null){
+            else if(!needCoin){
                 money = money - coin[i][0]
                 coin[i][1]--
                 result.push(coin[i][0])
