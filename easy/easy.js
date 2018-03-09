@@ -18,7 +18,7 @@ function moneyExchanger(nominalYangAkanDitukar, nominalYangDiutamakan) {
                 if(nominalYangAkanDitukar <= 0){
                     return arrMoney;
                 }
-                if(nominalYangAkanDitukar - money[counter][0] < 0){
+                else if(nominalYangAkanDitukar - money[counter][0] < 0){
                     break;
                 }
                 nominalYangAkanDitukar -= money[counter][0];
@@ -31,7 +31,7 @@ function moneyExchanger(nominalYangAkanDitukar, nominalYangDiutamakan) {
                 if(nominalYangAkanDitukar <= 0){
                     return arrMoney;
                 }
-                if(nominalYangAkanDitukar - money[counter][0] < 0){
+                else if(nominalYangAkanDitukar - money[counter][0] < 0){
                     break;
                 }
                 nominalYangAkanDitukar -= money[counter][0];
@@ -46,7 +46,9 @@ function moneyExchanger(nominalYangAkanDitukar, nominalYangDiutamakan) {
     return arrMoney;
 }
 
-console.log(moneyExchanger(150000))   
+console.log(moneyExchanger(150000))
+console.log(moneyExchanger(250000, 20000))
+console.log(moneyExchanger(300000))
 
 console.log(moneyExchanger(100000))   
 //hasilnya : [ 50000, 50000 ]
