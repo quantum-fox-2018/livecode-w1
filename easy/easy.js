@@ -47,7 +47,9 @@ function moneyExchanger(nominalYangAkanDitukar, nominalYangDiutamakan) {
 }
 
 console.log(moneyExchanger(150000))
+
 console.log(moneyExchanger(250000, 20000))
+
 console.log(moneyExchanger(300000))
 
 console.log(moneyExchanger(100000))   
