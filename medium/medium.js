@@ -40,5 +40,7 @@ function generateBorderBox(input){
 }
 
 generateBorderBox(9);
+console.log('');
 generateBorderBox(13);
+console.log('');
 generateBorderBox(23);
