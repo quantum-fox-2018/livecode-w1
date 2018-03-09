@@ -2,7 +2,9 @@
 
 > ⏰ Time Estimation: ~45 mins
 
-Buatlah sebuah function bernama `generateBorderBox` yang menerima satu parameter berupa number. function `generateBorderBox` akan membuat sebuah kotak ber-border dengan simbol `I` dengan panjang dan tinggi sesuai number parameter. Kemudian, di bagian paling tengah dari kotak, tuliskan simbol `*`.
+Buatlah sebuah function bernama `generateBorderBox` yang menerima satu parameter berupa number.
+function `generateBorderBox` akan membuat sebuah kotak ber-border dengan simbol `I`
+dengan panjang dan tinggi sesuai number parameter. Kemudian, di bagian paling tengah dari kotak, tuliskan simbol `*`.
 
 Border disini bentuknya dua lapis, dimana dipisahkan dengan jarak satu spasi. Jadi ada border luar dan ada border dalam.
 

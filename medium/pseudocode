@@ -1,0 +1,12 @@
+Membuat fungsi generateBorderBox dengan parameter panjang
+Membuat variable mid = Math.round(panjang / 2);
+Looping sesuai panjang degan index row dan col
+  Membuat variable borders = 0
+  IF row dan col === mid
+    taruh * di index mid,mid
+  IF row === 0 dan col === panjang-1
+    taruh I pada semua baris
+  IF row === 1 dan col === panjang-1
+    taruh I pada
+  IF row === 2 dan col === panjang-1
+  ELSE row === 0 dan col === panjang-1

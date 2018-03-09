@@ -1,0 +1,16 @@
+Membuat fungsi moneyExchanger(), parameter jmlExchanged dan BiggestExchanger
+Membuar array exchangers= [50000,20000,10000,5000,1000]
+Membuat array banyakExchangers = [2,3,5,8,10]
+Membuat array result = []
+Membuat variable indexExchangers = 0
+
+IF paramaeter BiggestExchanger dimasukan, maka indexExchangers = BiggestExchanger
+
+Looping untuk memasukan item exchangers dengan limit bawah indexExchangers
+    IF jmlExchanged - exchangers < 0
+      skip ke index exchangers selanjutnya
+    kurangi jmlExchanged dengan item exchangers
+    push item exchanger ke result
+IF jmlExchanged masih sisa
+  return 'Uang pecahan tidak mencukupi'
+Lalu return result;
