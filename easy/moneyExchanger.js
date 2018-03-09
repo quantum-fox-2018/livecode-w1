@@ -8,13 +8,6 @@ b. Apabila diisi, maka pecahan nya dimulai dari `nominalYangDiutamakan` tsb. `no
 c. Apabila jumlah pecahan tidak mencukupi, maka output nya : 'Uang pecahan tidak mencukupi'
 */
 
-/*
-1. inisialisasi variabel nominalTukar dengan 50000, 20000, 10000, 5000, 2000, 1000
-2. inisialisasi variabel jumlahUangPecahan 50000 sebanyak 2, 20000 sebanyak 3, 10000 sebanyak 5, 5000 sebanyak 8, 2000 sebanyak 6, 1000 sebanyak 10
-3. lakukan loop mulai dari 0 sampai panjang nominalTukar dan tambahkan satu disetiap iterasi
-    3.a. 
-*/
-
 function moneyExchanger(nominalYangAkanDitukar, nominalYangDiutamakan) {
     //your code here...
     var nominalTukar = [{
@@ -79,6 +72,7 @@ function moneyExchanger(nominalYangAkanDitukar, nominalYangDiutamakan) {
 
                 } else {
                     if (nominalYangDiutamakan === nominalTukar[i].uang && nominalTukar[i].jumlahPecahan === 0) {
+                        debugger;
                         var j = 1;
                         if (nominalYangAkanDitukar === nominalTukar[i + j].uang) {
                             hasilUangPecahan.push(nominalYangAkanDitukar);
@@ -94,13 +88,12 @@ function moneyExchanger(nominalYangAkanDitukar, nominalYangDiutamakan) {
                                 i--;
                             }
 
-                            if (nominalTukar[i + j].jumlahPecahan === 0) {
-                                j += 1;
-                            }
-
-                            if (nominalYangAkanDitukar >= nominalTukar[i + j].uang && nominalTukar[i + j].jumlahPecahan === 0) {
-                                return 'Uang pecahan tidak mencukupi';
-                            }
+                        if (nominalTukar[i + j].jumlahPecahan === 0) {
+                            j += 1;
+                        }
+                        if (nominalYangAkanDitukar >= nominalTukar[i + j].uang && nominalTukar[i + j].jumlahPecahan === 0) {
+                            return 'Uang pecahan tidak mencukupi';
+                        }
                     }
                 }
             }
