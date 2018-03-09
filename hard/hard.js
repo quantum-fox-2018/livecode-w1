@@ -21,7 +21,7 @@ function generateBarChart(input){
         if(j==0){
           line += i + '|';
         } else {
-          if(i==input[j-1]){
+          if(i<=input[j-1]){
             line += ' III ';
           } else {
             line += '     ';
@@ -31,7 +31,11 @@ function generateBarChart(input){
     }
     board.push(line);
   }
-  console.log(board);
+  console.log(board.join('\n'));
 }
 
-generateBarChart([3, 6, 4, 7, 2])
+generateBarChart([3, 6, 4, 7, 2]);
+console.log('');
+generateBarChart([9, 8, 7, 0, 1, 2, 3]);
+console.log('');
+generateBarChart([1, 2, 3, 4, 5, 4, 3, 2, 1]);
