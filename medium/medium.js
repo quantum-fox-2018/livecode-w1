@@ -39,6 +39,6 @@ function generateBorderBox(input){
   console.log(board);
 }
 
-// generateBorderBox(9);
-// generateBorderBox(13);
+generateBorderBox(9);
+generateBorderBox(13);
 generateBorderBox(23);
