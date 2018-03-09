@@ -36,7 +36,7 @@ function generateBorderBox(input){
     }
     board.push(line);
   }
-  console.log(board);
+  console.log(board.join('\n'));
 }
 
 generateBorderBox(9);
