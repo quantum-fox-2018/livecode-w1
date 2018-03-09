@@ -18,7 +18,9 @@ function generateBorderBox(input){
             else if(j == 2 && i > 2 && i < input-2){
                 inside.push('I')
             }
-            
+            else if(j == input-3 && i > 2 && i < input-2){
+                inside.push('I')
+            }
             else if(i == mid && j == mid){
                 inside.push('*')
             }
@@ -33,5 +35,5 @@ function generateBorderBox(input){
 
 
 generateBorderBox(9);
-// generateBorderBox(13);
-// generateBorderBox(23);
+generateBorderBox(13);
+generateBorderBox(23);
