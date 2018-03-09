@@ -21,7 +21,11 @@ function generateBarChart(input){
         if(j==0){
           line += i + '|';
         } else {
-          line += ' III ';
+          if(i==input[j-1]){
+            line += ' III ';
+          } else {
+            line += '     ';
+          }
         }
       }
     }
